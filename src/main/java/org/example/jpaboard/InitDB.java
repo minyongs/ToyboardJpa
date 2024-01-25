@@ -3,7 +3,7 @@ package org.example.jpaboard;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.example.jpaboard.Entity.Member;
-import org.example.jpaboard.repository.BoardRepository;
+
 import org.example.jpaboard.repository.MemberRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,7 +30,7 @@ import static org.example.jpaboard.Entity.Authority.ADMIN;
         static class InitService {
 
             private final MemberRepository memberRepository;//의존성 주입
-            private final BoardRepository boardRepository;
+
 
             public void userDBInit() {
 
